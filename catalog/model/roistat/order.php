@@ -7,7 +7,8 @@ class ModelRoistatOrder extends Model
     
     public function sendToRoistat($order_data, $order_id)
     {
-       mail('xaaalera@mail.ru','ORDER ARRAY',print_r($order_data,1));
+//need to debug
+     //  mail('youremail@mail.ru','ORDER ARRAY',print_r($order_data,1));
         $name = $order_data['firstname'] . ' '.$order_data['lastname'];
         $email = $order_data['email'];
         $phone = $order_data['telephone'];
@@ -46,7 +47,8 @@ EOF;
               'adress' =>$adress
           ),
       );
-            mail('xaaalera@mail.ru','ORDER ARRAY',print_r($roistatData,1));
+//need to debug
+//            mail('youremail@mail.ru','ORDER ARRAY',print_r($roistatData,1));
     
         $contents=$this->SendCUrl($roistatData);
         
