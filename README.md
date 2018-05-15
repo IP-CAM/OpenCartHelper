@@ -4,7 +4,6 @@
 ```
             $order =$this->getOrder($order_id);
             $this->model_roistat_order->sendToRoistat($order, $order_id);
-            $this->sendToCalltouch($order_id, $order_info, $order_product_query->rows);
 ```
 Затем перейти в функцию 
 /catalog/model/roistat/order.php
