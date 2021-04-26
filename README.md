@@ -1,7 +1,7 @@
 # Opencarthelper
-Copy to the root of the site then log in /Catalog/Model/checkout/Order.php 
-and add to the end of the 
-`confirm function ($ Order_id, $ Order_status_id, $ comment = '', $ notify = false)`
+Copy to the root of the site then log in /Catalog/Model/checkout/Order.php and add to the end of the
+confirm function ($ Order_id, $ Order_status_id, $ comment = '', $ notify = false)
+
 The following rows
 ---
 $ Order = $ This-> GetOrder ($ Order_ID);
